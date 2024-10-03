@@ -42,11 +42,11 @@ body {
 .nav-links {
   display: flex;
   flex-direction: column;
-
   width: 100%;
   gap: 8px;
   list-style: none;
 }
+
 .nav-links li {
   border-radius: 8px;
   padding: 12px 24px;
@@ -245,6 +245,7 @@ body {
   justify-content: center;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px #fff;
 }
 
 .projeto_info {
@@ -272,7 +273,6 @@ body {
 }
 .projeto_content {
   width: 100%;
-
   margin: 20px auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -394,6 +394,7 @@ body {
   text-align: center;
   color: #fff;
 }
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 1000px) {
@@ -403,9 +404,6 @@ body {
   }
 }
 @media (max-width: 900px) {
-  span {
-    display: none;
-  }
   .navbar {
     padding-top: 50px;
     overflow: hidden;
@@ -414,11 +412,19 @@ body {
   .logo {
     display: none;
   }
-  .nav-links li {
+  .nav-links {
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .nav-links li a {
+    flex-direction: column;
+    gap: 10px;
+  }
+  span {
+    font-size: 0.5rem;
+    font-weight: 700;
   }
   .container {
     justify-content: flex-start;
@@ -435,6 +441,13 @@ body {
   .sobre_info {
     padding: 10px;
   }
+  .sobre_info h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  .sobre_info p {
+    font-size: 1rem;
+  }
   .projeto_container {
     flex-wrap: wrap;
   }
@@ -450,6 +463,7 @@ body {
   .navbar {
     padding-top: 50px;
   }
+
   .home_info p {
     text-align: center;
     max-width: 300px;

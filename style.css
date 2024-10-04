@@ -226,12 +226,13 @@ body {
 .tecnologia_container div {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 20px;
 }
 .tecnologia_img {
   width: 100%;
 }
+
 .shadow {
   box-shadow: 0 0 10px #fff;
 }
@@ -273,15 +274,15 @@ body {
 }
 .projeto_content {
   width: 100%;
-  margin: 20px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 10px;
   padding-bottom: 20px;
+  justify-content: center;
 }
 .projeto_card {
   width: 100%;
-  max-width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
